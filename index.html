@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>茫茫人海我眼中只有你</title>
+    <link rel="stylesheet" href="form.css">
+<!--    自适应屏幕大小-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.3, maximum-scale=0.8, user-scalable=no" />
+<!--    user-scalble=""  Yes的允许用户双指缩放 no 不允许用户双指缩放或放大 initial-scale原始缩放比例，-->
+    <script src="vue.js"></script>
+</head>
+<body>
+<div class="bg-box">
+    <div class="bg">
+        <div class="box">
+            <img src="1.jpg" class="box-picture"  >
+            <div class="box-content" id="text" >
+                <transition name = "fade">
+                <p class="content" v-show = "show">{{content}}</p>
+                </transition>
+                <audio id="Audio"></audio>
+                <button type="button" class="button" onclick="audio(1)" >叫爸爸</button>
+                <button type="button" class="button" onclick="audio(2)">不叫</button>
+            </div>
+        </div>
+        <label >Web-Author:Yeely</label>
+        <label >Idea:GuangChang</label>
+    </div>
+</div>
+<circle ></circle>
+<circle style="left: 150px;margin-top: 300px"></circle>
+<circle style="left: 300px;margin-top: 150px"></circle>
+<script src="form.js"></script>
+
+</body>
+</html>

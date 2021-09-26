@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+}
+.bg-box{
+    background-color: rgb(107, 55, 177);
+    overflow: hidden;
+    width: auto;
+    height: 100vh;
+}
+
+.bg{
+    width: 150%;
+    height: 75em;
+    background-image: linear-gradient(to bottom right,
+    rgb(49, 110, 255),
+    rgb(163, 124, 222),
+    rgb(255, 132, 132));
+
+}
+circle{
+    width:6.25em;
+    height:6.25em;
+    background:red;
+    animation-name:myfirst;
+    animation-duration:5s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    margin-left: 50px;
+    animation-play-state:running;
+    border-radius:500px;
+    position: absolute;
+    margin-top: 150px;
+    /* Safari and Chrome: */
+    -webkit-animation-name:myfirst;
+    -webkit-animation-duration:5s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-play-state:running;
+}
+@keyframes myfirst
+{
+    0%   {background: #ffffff;top: 50px}
+    25%  {background: #78aade;top: 100px}
+    50%  {background: #e57dd5;top: 150px}
+    75%  {background: #9bcdda;top: 100px}
+    100% {background: #ecdb1c;top: 50px}
+}
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    0%   {background: #ffffff;top: 50px}
+    25%  {background: #78aade;top: 100px}
+    50%  {background: #e57dd5;top: 150px}
+    75%  {background: #9bcdda;top: 100px}
+    100% {background: #ecdb1c;top: 50px}
+}
+.box{
+    z-index: 500;
+    height: 32%;
+    width: 53%;
+    padding: 2%;
+    position: relative;
+    top: 15%;
+    left: 4.8%;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter:blur(40px);
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,.1);
+}
+.box-content{
+    width: 50vh;
+    height: auto;
+    position: relative;
+    top: 40%;
+}
+p{
+    margin-top: 8%;
+    font-size: 190%;
+    line-height: 5%;
+    margin-right: 10%;
+}
+.content{
+    clear: both;
+    /*---文本上下居中---*/
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    /*--------------*/
+    color: rgba(255, 255, 255, 0.8);
+    transition: color;
+}
+/*文字过度效果-----------------------------------*/
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 1.7s
+    /*    修改这里需要修改cloudmusic.js的过度时间*/
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active, 2.1.8 版本以下 */ {
+    opacity: 0
+}
+.box-picture{
+    height: 60%;
+    width: 70%;
+    margin-left: 13%;
+    position: absolute;
+    border-radius: 17px;
+    display: none;
+}
+.button{
+    background-color: rgba(255,255,255,0.1);
+    border: 1px  solid rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-top: 15%;
+    margin-left: 15%;
+    font-size: 120%;
+    display: none;
+}
+label{
+    position: relative;
+    top: 25%;
+    display: block;
+    margin-left: 11.8em ;
+    color: #c2c2c2;
+    line-height: 1.2rem;
+}
